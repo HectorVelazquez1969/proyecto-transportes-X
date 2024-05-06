@@ -9,6 +9,7 @@ body{
 
 header{
     background-color: #2e64a1;
+    padding-top: 20px;
     
 }
 header h1{
@@ -29,7 +30,7 @@ nav{
 .holder{
     width: 960px;
     margin: 0 auto;
-    background-color: ;
+    
 
 }
 
@@ -54,7 +55,7 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
-    background-color: orange;
+    /* background-color: orange */
     padding: 3px 0
     ;
     display: flex;
