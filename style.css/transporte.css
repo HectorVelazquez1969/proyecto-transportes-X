@@ -85,7 +85,7 @@ h2{
     width: 25%;
     display: flex;}
 
-.Bienvenidos p{ font-size 20px;}  
+.Bienvenidos p{ font-size : 20px;}  
 
 .testimonio{background-color: #ccc;}
 
@@ -141,8 +141,10 @@ h2{
 
     .contacto{
         display: flex;
+        gap: 25px;
     }
     .contacto div{width: 100%;}
+
     .datos ul li{font-size: 14px;}
 
     .formulario p{display: flex;}
@@ -150,7 +152,10 @@ h2{
     .formulario p label{
         min-width: 100px;
         background-color: yellow;
+        display: flex;
+        align-items: center;
     }
+
     .formulario p input, .formulario p textarea{
         width: 100%;
         background-color: #ccc;
@@ -164,6 +169,9 @@ h2{
         height: 150px;
     }
 
+.formulario p:nth-child(4){
+    background-color: orange;align-items: start;
+}
     
     .formulario input[ type="submit"]{
         background-color: #6da9ed;
@@ -173,8 +181,8 @@ h2{
         color: white;
         cursor: pointer;
         text-align: right;
-        /* position: relative; */
-        left: 220px;
+        position:relative;
+        left: 100px;
 
      
 
@@ -184,4 +192,10 @@ h2{
         display: flex;
         
         
+    }
+
+    .formulario input[ type="submit"]:hover{background-color: #2e64a1;
+        
+  
+
     }
