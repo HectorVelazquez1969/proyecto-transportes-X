@@ -16,7 +16,7 @@ header h1 {
   font-style: italic;
   /* display: inline-flex */
   display: inline-block;
-  position: relative;
+  /* position: relative; */
   bottom: 35px;
 }
 
@@ -24,8 +24,9 @@ nav {
   background-color: #6da9ed;
 }
 .holder {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
+  /* background-color: orange; */
 }
 
 nav ul {
@@ -70,6 +71,11 @@ h2 {
   color: #2e64a1;
   font-weight: 400;
 }
+/* inicio Home */
+
+.homeimg img{
+  max-width: 100%;
+}
 
 .columnas {
   display: flex;
@@ -79,7 +85,7 @@ h2 {
 .Bienvenidos {
   width: 75%;
   padding-right: 20px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .testimonios {
@@ -199,5 +205,37 @@ p .prueba {display: flex;}
   background-color: #2e64a1;}
 
 /* inicio @media 550 */
+@media screen and (max-width: 550px) {
+  /*home*/
 
+  .columnas{
+    flex-direction: column;
+  }
 
+.Bienvenidos, .Testimonios{
+  width: 100%;
+}
+.holder{
+  padding: 0 16px;
+}
+.personas{
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.persona{
+  width: 47% ;
+}
+.contacto{
+  flex-direction: column;}
+}
+header .holder{
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+  
+.header h1{
+  position: static;
+}
+/* fin @media 550 */
